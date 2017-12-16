@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.project_team7.Vote_Activity"
+    tools:showIn="@layout/activity_vote">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4">
+            <ImageButton
+                android:id="@+id/ib_food"
+                android:background="#b0c4de"
+                android:src="@drawable/ic_restaurant_black_48dp"
+                android:layout_columnWeight="1"/>
+            <ImageButton
+                android:id="@+id/ib_beauty"
+                android:background="#b0c4de"
+                android:src="@drawable/ic_face_black_48dp"
+                android:layout_columnWeight="1"/>
+            <ImageButton
+                android:id="@+id/ib_culture"
+                android:background="#b0c4de"
+                android:src="@drawable/ic_theaters_black_48dp"
+                android:layout_columnWeight="1"/>
+            <ImageButton
+                android:id="@+id/ib_etc"
+                android:background="#b0c4de"
+                android:src="@drawable/ic_add_black_48dp"
+                android:layout_columnWeight="1"/>
+        </GridLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always">
+
+                <ListView
+                    android:id="@+id/list1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+                <ListView
+                    android:id="@+id/list2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+                <ListView
+                    android:id="@+id/list3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+                <ListView
+                    android:id="@+id/list4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+
+    </FrameLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

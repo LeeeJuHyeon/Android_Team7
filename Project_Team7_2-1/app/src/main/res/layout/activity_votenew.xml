@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/linear1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목: "
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_weight="4"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목을 입력하세요"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:id="@+id/et_title"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/linear1_1"
+        android:layout_below="@id/linear1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="분류: "
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_weight="4"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_category"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음식  "
+                android:textSize="13dp"
+                android:id="@+id/rb_food"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뷰티/패션  "
+                android:textSize="13dp"
+                android:id="@+id/rb_beauty"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="문화생활  "
+                android:textSize="13dp"
+                android:id="@+id/rb_culture"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textSize="13dp"
+                android:id="@+id/rb_etc"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1_1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마감시간: "
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" 몇 "
+            android:inputType="number"
+            android:textSize="15dp"
+            android:id="@+id/et_timelimit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간 후 마감"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:id="@+id/tv_limittext"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/linear2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="후보 입력:     최소 2개 이상 입력하세요         "
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="5"
+                android:id="@+id/modifySet"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추가"
+                android:id="@+id/bt_add"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/linear_root1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="게시물 등록"
+            android:id="@+id/bt_voteenroll"
+            android:layout_margin="5dp"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+</RelativeLayout>

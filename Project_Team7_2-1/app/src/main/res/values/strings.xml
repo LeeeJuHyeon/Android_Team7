@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">결정장애백신</string>
+    <string name="title_activity_vote_">Vote_Activity</string>
+    <string name="title_activity_test">Test</string>
+</resources>

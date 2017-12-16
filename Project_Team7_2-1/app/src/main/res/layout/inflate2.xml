@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="후보 내용"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:id="@+id/tv_item2"/>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="이미지 삽입"
+        android:src="@drawable/ic_crop_original_black_48dp"
+        android:id="@+id/ib_item2"/>
+</LinearLayout>
